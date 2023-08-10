@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(styles.css);
+
+.form,
+select
+{
+    @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 text-lg cursor-pointer
+}
+
+.btn {
+    @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 cursor-pointer
+}
+
+
+/* Flascards project */
+/* .flashcard {
+    @apply border-[#e7e7e7] border-[1px] bg-[#f7f7f7] text-black rounded-md flex items-center justify-center text-center p-5 cursor-pointer aspect-[2/1]
+}
+
+.selected {
+    @apply border-[#e03131] border-[1px] bg-[#e03131] text-white rounded-md flex items-center justify-center text-center p-5 cursor-pointer aspect-[2/1]
+} */
