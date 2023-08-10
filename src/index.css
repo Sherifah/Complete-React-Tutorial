@@ -5,7 +5,9 @@
 @tailwind utilities;
 @import url(styles.css);
 
-.form,
+
+/* TravelList project */
+/* .form,
 select
 {
     @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 text-lg cursor-pointer
@@ -13,6 +15,10 @@ select
 
 .btn {
     @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 cursor-pointer
+} */
+
+.btn {
+    @apply bg-slate-200 text-black border-[1px] border-black rounded-sm px-2 cursor-pointer text-center
 }
 
 

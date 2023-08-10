@@ -1,15 +1,16 @@
 import React from "react";
-import FlashCard from "./components/FlashCards/FlashCard";
+import StepCounter from "./components/StepCounter";
+// import FlashCard from "./components/FlashCards/FlashCard";
 // import TravelList from "./components/TravelLists/TravelList";
 // import AdviceGenerator from "./components/AdviceGenerator";
-// import StepCounter from "./components/StepCounter";
+
 
 const App = () => {
   return (
     <div className="">
-      <FlashCard />
+      {/* <FlashCard /> */}
       {/* <TravelList /> */}
-      {/* <StepCounter /> */}
+      <StepCounter />
       {/* <AdviceGenerator /> */}
     </div>
   );

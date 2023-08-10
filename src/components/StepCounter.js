@@ -7,22 +7,26 @@ function StepCounter() {
   const date = new Date();
   date.setDate(date.getDate() + count);
 
+  function handleChange(event) {
+    setCount(Number(event.target.value))
+  }
+
+  function resetHandler() {
+    setCount(0);
+    setStep(1);
+  }
+
   return (
     <div className="text-center mt-5">
       <div className="step flex gap-2 justify-center items-center mb-3">
-        <button
-          className="btn"
-          onClick={() => setStep((prevstep) => prevstep - 1)}
-        >
-          -
-        </button>
-        <p className="font-semibold">Step: {step}</p>
-        <button
-          className="btn"
-          onClick={() => setStep((prevstep) => prevstep + 1)}
-        >
-          +
-        </button>
+      <input
+          type="range"
+          min="0"
+          max="10"
+          value={step}
+          onChange={(e) => setStep(Number(e.target.value))}
+        />
+        <span>Step: {step}</span>
       </div>
 
       <div className="count flex gap-2 justify-center items-center mb-3">
@@ -32,7 +36,7 @@ function StepCounter() {
         >
           -
         </button>
-        <p className="font-semibold">Count: {count}</p>
+        <input type="text" value={count} placeholder={0} onChange={handleChange} className="border-black border-[1px] rounded-sm px-1" />
         <button
           className="btn"
           onClick={() => setCount((prevcount) => prevcount + step)}
@@ -51,6 +55,8 @@ function StepCounter() {
         </span>
         <span>{date.toDateString()}</span>
       </p>
+
+      <button className="btn mt-5" onClick={resetHandler}>Reset</button>
     </div>
   );
 }
