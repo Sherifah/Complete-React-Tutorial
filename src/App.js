@@ -1,5 +1,6 @@
 import React from "react";
-import TravelList from "./components/TravelLists/TravelList";
+import Accordion from "./components/Accordions/Accordion";
+// import TravelList from "./components/TravelLists/TravelList";
 // import FlashCard from "./components/FlashCards/FlashCard";
 // import AdviceGenerator from "./components/AdviceGenerator";
 // import StepCounter from "./components/StepCounter";
@@ -7,8 +8,9 @@ import TravelList from "./components/TravelLists/TravelList";
 const App = () => {
   return (
     <div className="">
+      <Accordion />
       {/* <FlashCard /> */}
-      <TravelList />
+      {/* <TravelList /> */}
       {/* <StepCounter /> */}
       {/* <AdviceGenerator /> */}
     </div>

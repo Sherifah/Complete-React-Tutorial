@@ -1,6 +1,16 @@
-body {
+/* **TravelLists Project  */
+
+* {
    margin: 0;
-   background-color: #5a3e2b;
+   padding: 0;
+   box-sizing: border-box;
+   /* background-color: #5a3e2b; */
    /* padding: 20px; */
 
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  line-height: 1;
 }

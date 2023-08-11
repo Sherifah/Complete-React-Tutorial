@@ -29,7 +29,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         listLayout: "repeat(auto-fit, minmax(250px, 1fr))",
+        item: "auto 1fr auto",
       },
+      boxShadow: {
+        item: "0 0 30px rgba(0, 0, 0, 0.1)",
+      }
     },
   },
   plugins: [],

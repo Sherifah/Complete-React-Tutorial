@@ -7,7 +7,7 @@
 
 
 /* TravelList project */
-.form,
+/* .form,
 select
 {
     @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 text-lg cursor-pointer
@@ -15,7 +15,7 @@ select
 
 .btn {
     @apply bg-button text-body border-none rounded-[10rem] px-6 py-1 cursor-pointer
-}
+} */
 
 
 /* StepCounter project */
@@ -32,3 +32,26 @@ select
 .selected {
     @apply border-[#e03131] border-[1px] bg-[#e03131] text-white rounded-md flex items-center justify-center text-center p-5 cursor-pointer aspect-[2/1]
 } */
+
+
+/* Accordion project */
+
+.accordion {
+    @apply w-[700px] mx-auto my-[100px] flex flex-col gap-6
+}
+
+.item {
+    @apply shadow-item px-6 py-5 cursor-pointer border-t-4 border-t-white border-b-4 border-b-white rounded
+}
+
+.content-box {
+    @apply pt-4 pb-4 leading-[1.6] text-[#868e96] ml-12 mt-4
+}
+
+.question {
+    @apply grid grid-cols-item gap-x-6 gap-8 items-center
+}
+
+.open {
+    @apply border-t-4 border-t-[#087f5b]
+}
