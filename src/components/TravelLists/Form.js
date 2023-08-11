@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { nanoid } from 'nanoid';
+import { nanoid } from "nanoid";
 
-function Form() {
+function Form(props) {
   const [description, setDescription] = useState("");
 
   const [quantity, setQuantity] = useState(1);
@@ -11,8 +11,9 @@ function Form() {
 
     if (!description) return; //Do nothing if no description
 
-    const newItem = {description, quantity, packed:false, id: nanoid() }
-    console.log(newItem)
+    const newItem = { description, quantity, packed: false, id: nanoid() };
+
+    props.addItem(newItem);
 
     setDescription("");
     setQuantity(1);
