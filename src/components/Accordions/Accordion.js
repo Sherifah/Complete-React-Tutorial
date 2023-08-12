@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Faq from "./Faq";
 
 const faqs = [
@@ -17,12 +17,12 @@ const faqs = [
 ];
 
 function Accordion() {
+  const [curOpen, setCurOpen] = useState(null);
+
   const faqList = faqs.map((data, index) => (
-    <Faq title={data.title} text={data.text} num={index} key={index} />
+    <Faq title={data.title} text={data.text} num={index} key={index} id={index} curOpen={curOpen} onOpen={setCurOpen}/>
   ));
-  return <div className="accordion">
-    {faqList}
-  </div>;
+  return <div className="accordion">{faqList}</div>;
 }
 
 export default Accordion;

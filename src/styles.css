@@ -10,7 +10,9 @@
 }
 
 body {
-  font-family: sans-serif;
+  padding: 10px;
+
+  /* font-family: sans-serif;
   color: #343a40;
-  line-height: 1;
+  line-height: 1; */
 }

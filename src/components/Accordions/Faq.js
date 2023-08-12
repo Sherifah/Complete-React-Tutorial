@@ -1,34 +1,31 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Faq(props) {
-  const [isOpen, setIsOpen] = useState(false);
+function Faq({ num, title, text, curOpen, id, onOpen }) {
+  const isOpen = num === curOpen
 
-  function handleClick() {
-    setIsOpen((prev) => !prev);
-    console.log("Opened!");
+  function handleOpen() {
+    isOpen ? onOpen(null) : onOpen(num)
   }
 
   return (
-    <div onClick={handleClick} className={`item ${isOpen ? "open" : ""}`}>
+    <div onClick={handleOpen} className={`item ${isOpen ? "open" : ""}`}>
       <div className="question">
         <p
           className={`text-xl font-normal ${
             isOpen ? "text-[#087f5b]" : "text-[#ced4da]"
           }`}
         >
-          {props.num < 10 ? `0${props.num + 1}` : props.num}
+          {num < 10 ? `0${num + 1}` : num}
         </p>
         <p
-          className={`text-xl font-semibold ${
-            isOpen ? "text-[#087f5b]" : " "
-          }`}
+          className={`text-xl font-semibold ${isOpen ? "text-[#087f5b]" : " "}`}
         >
-          {props.title}
+          {title}
         </p>
         <p className="text-xl font-semibold">{isOpen ? "-" : "+"}</p>
       </div>
 
-      {isOpen && <div className="content-box">{props.text}</div>}
+      {isOpen && <div className="content-box">{text}</div>}
     </div>
   );
 }

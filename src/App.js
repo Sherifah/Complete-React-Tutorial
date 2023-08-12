@@ -1,5 +1,6 @@
 import React from "react";
-import Accordion from "./components/Accordions/Accordion";
+import TipCalculator from "./components/TipCalculators/TipCalculator";
+// import Accordion from "./components/Accordions/Accordion";
 // import TravelList from "./components/TravelLists/TravelList";
 // import FlashCard from "./components/FlashCards/FlashCard";
 // import AdviceGenerator from "./components/AdviceGenerator";
@@ -8,7 +9,8 @@ import Accordion from "./components/Accordions/Accordion";
 const App = () => {
   return (
     <div className="">
-      <Accordion />
+      <TipCalculator />
+      {/* <Accordion /> */}
       {/* <FlashCard /> */}
       {/* <TravelList /> */}
       {/* <StepCounter /> */}
